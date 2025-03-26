@@ -1,2 +1,2 @@
 # ch-runlen
-Challenge - The RunLength compression algorithm
+Challenge - The RunLength compression algorithm.
