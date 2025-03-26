@@ -5,18 +5,15 @@
  */
 function encode(input) {
     let output = '';
-    let currentChar = '';
-    let length = '';
-    for (const char of input) {
-        if (char === currentChar) {
+    for (let i = 0, currentChar = '', length = ''; i <= input.length; i++) {
+        if (input[i] === currentChar) {
             length++;
             continue;
         }
         output += `${currentChar}${length}`;
-        currentChar = char;
+        currentChar = input[i];
         length = 1;
     }
-    output += `${currentChar}${length}`;
     return output;
 }
 
